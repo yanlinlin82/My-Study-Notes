@@ -3,3 +3,17 @@
 ## GO语言学习
 
 2018年8月6日，立志开始学习GO语言。
+
+## VIM使用技巧
+
+### 使用自定义命令更新电子书
+
+在`~/.vimrc`中加入如下定义：
+
+```
+command Render !Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
+```
+
+这样，就可以在vim中，使用`:Render`命令来重新生成电子书，而不需要每次都费劲去敲那么长的命令行了。
+
+关于自定义命令，参见[vim文档](http://vimdoc.sourceforge.net/htmldoc/usr_40.html#40.2)
