@@ -1,0 +1,28 @@
+# 生信工具
+
+## 序列比对
+
+* [minimap2](https://lh3.github.io/minimap2/)
+
+## R包
+
+### biomaRt
+
+安装：
+
+```r
+biocLite("biomaRt")
+```
+
+使用：
+
+```r
+library("biomaRt")
+
+listMarts()  # 列举有哪些数据库可用
+
+ensembl <- useMart("ensembl")  # 选取其中的ensembl
+ds <- listDatasets(ensembl)    # 列举有哪些数据集
+```
+
+参考：<https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html>
