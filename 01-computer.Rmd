@@ -4,7 +4,7 @@
 
 2018年8月6日，立志开始学习GO语言。
 
-## VIM使用技巧
+## Vim编辑器
 
 ### 使用自定义命令更新电子书
 
@@ -17,3 +17,20 @@ command Render !Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitboo
 这样，就可以在vim中，使用`:Render`命令来重新生成电子书，而不需要每次都费劲去敲那么长的命令行了。
 
 关于自定义命令，参见[vim文档](http://vimdoc.sourceforge.net/htmldoc/usr_40.html#40.2)
+
+### 使用技巧
+
+* 光标移动
+    * 上下左右：`h`, `j`, `k`, `l` - 相对光标移动键，右手不用移动到很远处
+    * 当前屏幕的顶、中、底：`H`, `M`, `L` - 助记：High, Middle, Low
+    * 屏幕上下移动半屏：`Ctrl` + `U`, `Ctrl` + `D` - 助记：Up, Down
+    * 行首、末：`^`, `$`, `0`（绝对行首）
+    * 匹配括号：`%`
+* 进入编辑（进入前，先移动到不同位置）：
+    * `i`, `I` - Insert（当前位置、行首）
+    * `a`, `A` - After（当前单词、行末）
+    * `o`, `O` - 下一行、上一行
+
+* 设置行号
+    * `set number`
+    * `set relativenumber` - 显示为相对行号
