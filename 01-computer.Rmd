@@ -26,10 +26,18 @@ command Render !Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitboo
     * 屏幕上下移动半屏：`Ctrl` + `U`, `Ctrl` + `D` - 助记：Up, Down
     * 行首、末：`^`, `$`, `0`（绝对行首）
     * 匹配括号：`%`
-* 进入编辑（进入前，先移动到不同位置）：
+
+* 进入编辑（进入前，先移动到不同位置）
     * `i`, `I` - Insert（当前位置、行首）
     * `a`, `A` - After（当前单词、行末）
     * `o`, `O` - 下一行、上一行
+
+* 撤消与重做
+    * `u`, Ctrl + `r`
+
+* 快速编辑
+    * visual模式：`I`, `A` - 多行同时插入（在当前光标之前或之后）
+    * `J` - 多行并入一行
 
 * 设置行号
     * `set number`
